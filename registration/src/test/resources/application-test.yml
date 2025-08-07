@@ -1,0 +1,21 @@
+spring:
+  jackson:
+    default-typing: NONE
+    deserialization:
+      fail-on-invalid-subtype: false
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/course_db?serverTimezone=Asia/Seoul
+    username: root
+    password: 1069
+    hikari:
+      maximum-pool-size: 200
+      minimum-idle: 20
+      connection-timeout: 30000
+      idle-timeout: 30000
+      max-lifetime: 600000
+

@@ -1,0 +1,36 @@
+spring:
+  cache:
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  jackson:
+    default-typing: NONE
+    deserialization:
+      fail-on-invalid-subtype: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/course_db?serverTimezone=Asia/Seoul
+    username: root
+    password: 1069
+    hikari:
+      maximum-pool-size: 200
+      minimum-idle: 20
+      idle-timeout: 30000
+      connection-timeout: 2000
+      max-lifetime: 600000
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  tomcat:
+    threads:
+      max: 300
+    accept-count: 200
+    min-spare: 50
