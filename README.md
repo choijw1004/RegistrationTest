@@ -1,8 +1,5 @@
 # 단일 인스턴스로 개발하는 수강 신청 백엔드 시스템
 
-담당 역할: BE, 데이터베이스 설계
-GitHub: https://github.com/choijw1004/RegistrationTest
-
 Contents
 
 ---
